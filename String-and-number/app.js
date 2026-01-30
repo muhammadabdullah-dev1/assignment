@@ -114,16 +114,4 @@
 
 
 // console.log (sentence.indexOf("cat"));
-function sentence(para) {
-    let index=para.indexOf("cat")
-if (index !==-1) {
-    return true;
-    
-}else{
-    return false;
-
-    
-}
-}
-console.log(sentence("i have many cat cat cat"));
-
+ 
