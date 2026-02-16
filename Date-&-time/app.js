@@ -100,3 +100,22 @@
 // }
 // console.log(calculateAge("2004-10-17"));
 
+
+
+
+// function firstDayOfMonth() {
+
+//     const today=new Date();
+//       const monthNames = [
+//         "January", "February", "March", "April",
+//         "May", "June", "July", "August",
+//         "September", "October", "November", "December"
+//     ];
+//     const MonthName= monthNames[today.getMonth()];
+//     const fullYear=today.getFullYear();
+
+//     return `${today},${MonthName},${1}`
+// }
+// console.log(firstDayOfMonth());
+
+
