@@ -71,7 +71,7 @@
 // const dayName=date.getDay();
 // const fullYear=date.getFullYear();
 // return `${newDate},${newMonth},${dayName},${fullYear}`
-    
+
 // }
 // console.log(formattingDate(new Date()));
 
@@ -80,7 +80,7 @@
 // function gettime(startTime,endTime) {
 //     const start= new Date(startTime);
 //     const end=new Date(endTime)
-    
+
 //     const newTime=end-start;
 //     const convertMnSec= newTime/(1000*60);
 //     return convertMnSec;
@@ -119,3 +119,41 @@
 // console.log(firstDayOfMonth());
 
 
+
+
+
+// question 6
+
+function timeChecker(pastTime) {
+    const past = new Date(pastTime)
+    const currentTime = new Date()
+
+    const diff = currentTime - past
+    // const convertSec = diff / (1000)
+    // const convertMin = diff / (1000 * 60)
+    // const conevertHour = diff / (1000 * 60 * 60)
+
+       if (diff < 0) {
+        return "In the future";
+    }
+    const second = Math.floor(diff / 1000)
+    if (second < 60) {
+        return "Just now"
+    }
+
+    const minutes=Math.floor(second/60)
+
+    if (minutes < 60) {
+        return minutes + "minutes ago"
+    }
+    const hours=Math.floor(minutes/60)
+    if (hours< 24) {
+        return hours + "hour ago"
+    }
+      const day=Math.floor(hours/24)
+    if (day< 24) {
+        return day+ " day ago"
+    }
+}
+
+console.log(timeChecker("2026-02-17T14:43:00"));
