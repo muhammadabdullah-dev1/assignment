@@ -124,36 +124,51 @@
 
 // question 6
 
-function timeChecker(pastTime) {
-    const past = new Date(pastTime)
-    const currentTime = new Date()
+// function timeChecker(pastTime) {
+//     const past = new Date(pastTime)
+//     const currentTime = new Date()
 
-    const diff = currentTime - past
-    // const convertSec = diff / (1000)
-    // const convertMin = diff / (1000 * 60)
-    // const conevertHour = diff / (1000 * 60 * 60)
+//     const diff = currentTime - past
+//     // const convertSec = diff / (1000)
+//     // const convertMin = diff / (1000 * 60)
+//     // const conevertHour = diff / (1000 * 60 * 60)
 
-       if (diff < 0) {
-        return "In the future";
-    }
-    const second = Math.floor(diff / 1000)
-    if (second < 60) {
-        return "Just now"
-    }
+//        if (diff < 0) {
+//         return "In the future";
+//     }
+//     const second = Math.floor(diff / 1000)
+//     if (second < 60) {
+//         return "Just now"
+//     }
 
-    const minutes=Math.floor(second/60)
+//     const minutes=Math.floor(second/60)
 
-    if (minutes < 60) {
-        return minutes + "minutes ago"
-    }
-    const hours=Math.floor(minutes/60)
-    if (hours< 24) {
-        return hours + "hour ago"
-    }
-      const day=Math.floor(hours/24)
-    if (day< 24) {
-        return day+ " day ago"
-    }
+//     if (minutes < 60) {
+//         return minutes + "minutes ago"
+//     }
+//     const hours=Math.floor(minutes/60)
+//     if (hours< 24) {
+//         return hours + "hour ago"
+//     }
+//       const day=Math.floor(hours/24)
+//     if (day< 24) {
+//         return day+ " day ago"
+//     }
+// }
+
+// console.log(timeChecker("2026-02-17T14:43:00"));
+
+
+
+
+
+
+// ---------------------
+// quetion no7
+
+
+
+
+function name(params) {
+    
 }
-
-console.log(timeChecker("2026-02-17T14:43:00"));
