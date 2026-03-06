@@ -16,8 +16,24 @@
 // })
 
 
-let button = document.getElementById("btn")
+// let button = document.getElementById("btn")
+// let text = document.getElementById("text")
+// button.addEventListener("click", () => {
+//     text.style.display = "none"
+// })
+
+
+let texts = 0;
+
+let increaseBtn = document.getElementById("increase")
+let decreaseBtn = document.getElementById("decrease")
 let text = document.getElementById("text")
-button.addEventListener("click", () => {
-    text.style.display = "none"
+increaseBtn.addEventListener("click", () => {
+
+    texts++;
+    text.innerText = texts;
+})
+decreaseBtn.addEventListener("click", () => {
+    texts--;
+    text.innerText = texts;
 })
