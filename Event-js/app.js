@@ -23,17 +23,25 @@
 // })
 
 
-let texts = 0;
+// let texts = 0;
 
-let increaseBtn = document.getElementById("increase")
-let decreaseBtn = document.getElementById("decrease")
-let text = document.getElementById("text")
-increaseBtn.addEventListener("click", () => {
+// let increaseBtn = document.getElementById("increase")
+// let decreaseBtn = document.getElementById("decrease")
+// let text = document.getElementById("text")
+// increaseBtn.addEventListener("click", () => {
 
-    texts++;
-    text.innerText = texts;
-})
-decreaseBtn.addEventListener("click", () => {
-    texts--;
-    text.innerText = texts;
+//     texts++;
+//     text.innerText = texts;
+// })
+// decreaseBtn.addEventListener("click", () => {
+//     texts--;
+//     text.innerText = texts;
+// })
+
+
+
+let button = document.getElementById("btn")
+button.addEventListener("click", () => {
+    // document.getElementById("btn").innerHTML = ("changed")
+    button.disabled = true;
 })
